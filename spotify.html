@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="spotify.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="Spotify-logo.png" alt="spotify" ><A href="https://open.spotify.com/" target="_blank">Spotify</A></li>
+            <li><A href="coming.html" target="_blank">HOME</A></li>
+            <li><A href="coming1.html" target="_blank">ABOUT</A></li>
+            
+            
+        </ul>
+    </nav>
+
+    
+    <div class="container">
+        
+        <div class="Songlist" style="width:60%"></div>
+            <h1>Most Viewed Songs</h1>
+            <div>
+                <div class="songitems" >
+                    <img src="song1.png" alt="1" height="40px">
+                    <span class="songname">BABY by Justin Biber</span>
+                    <span class="songlistplayer"><span class="timestamp">3:02</span><img src="play.png" height="30px" class="songitemplay" id="0"></span>
+                </div>
+            </div>
+            <div>
+                <div class="songitems">
+                    <img src="song1.png" alt="1" height="40px">
+                    <span class="songname">BABY by Justin Biber</span>
+                    <span class="songlistplayer"><span class="timestamp">3:02</span><img src="play.png" height="30px" class="songitemplay" id="1"></span>
+                </div>
+            </div>
+            <div>
+                <div class="songitems">
+                    <img src="song1.png" alt="1" height="40px">
+                    <span class="songname">BABY by Justin Biber</span>
+                    <span class="songlistplayer"><span class="timestamp">3:02</span><img src="play.png" height="30px" class="songitemplay" id="2"></span>
+                </div>
+            </div>
+            <div>
+                <div class="songitems">
+                    <img src="song1.png" alt="1" height="40px">
+                    <span class="songname">BABY by Justin Biber</span>
+                    <span class="songlistplayer"><span class="timestamp">3:02</span><img src="play.png" height="30px" class="songitemplay" id="3"></span>
+                </div>
+            </div>
+            <div>
+                <div class="songitems">
+                    <img src="song1.png" alt="1" height="40px">
+                    <span class="songname">BABY by Justin Biber</span>
+                    <span class="songlistplayer"><span class="timestamp">3:02</span><img src="play.png" height="30px" class="songitemplay" id="4"></span>
+                </div>
+            </div>
+            <div>
+                <div class="songitems">
+                    <img src="song1.png" alt="1" height="40px">
+                    <span class="songname">BABY by Justin Biber</span>
+                    <span class="songlistplayer"><span class="timestamp">3:02</span><img src="play.png" height="30px" class="songitemplay" id="5"></span>
+                </div>
+            </div>
+            <div>
+                <div class="songitems">
+                    <img src="song1.png" alt="1" height="40px">
+                    <span class="songname">BABY by Justin Biber</span>
+                    <span class="songlistplayer"><span class="timestamp">3:02</span><img src="play.png" height="30px" class="songitemplay" id="6"></span>
+                </div>
+            </div>
+            <div>
+                <div class="songitems">
+                    <img src="song1.png" alt="1" height="40px">
+                    <span class="songname">BABY by Justin Biber</span>
+                    <span class="songlistplayer"><span class="timestamp">3:02</span><img src="play.png" height="30px" class="songitemplay" id="7"></span>
+                </div>
+            </div> 
+        <!-- <div class="image"><img src="playing.png" style="float:right" ></div>     -->
+        <div class="songbanner"></div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="myprogressbar" min="0" value="0" max="100" >
+        <div class="icons">
+            <img src="backward.png" height="50px" id="previous">
+            <img src="play.png" height="50px" id="masterplay" >
+            <img src="forward.png" height="50px" id="next">
+        </div>
+        <div class="songinfo"><img src="wave.gif"  width="100px" id="wave"><span id="mastersongname"></span></div>
+    </div>
+    
+
+    <script src="spotify.js"></script>
+</body>
+</html>
