@@ -8,6 +8,7 @@ let wave = document.getElementById('wave');
 let songitems = Array.from(document.getElementsByClassName('songitems'));
 let mastersongname = document.getElementById("mastersongname");
 let songitemplay = Array.from(document.getElementsByClassName('songitemplay'));
+let clock = document.getElementsByClassName('clock');
 let songs=
     [
     {songname: "295(official Audio)| Sidhu Moose wala", filepath: "song/1.mp3", coverpath:"covers/1.jpg"},

@@ -58,7 +58,11 @@ nav{
   height:30px;
   padding-right:15px;
   opacity: 0;
-   transition: opacity 0.4s ease-in;
+  transition: opacity 0.4s ease-in;
+ }
+
+ h1{
+  font-family: 'Oswald', sans-serif ;
  }
 
  .container{
@@ -74,24 +78,29 @@ nav{
     background-image: url("music.gif");
     background-size: 200px;
     flex-direction: column;
-    flex-wrap:wrap;
+   
+
  }
 
  
 
  .songitems{
-   width:50%;
+   /* width:50%; */
    height:50px;
    display: flex;
    justify-content: space-between;
-   width:40%;
+   width: 95%;;
    align-items: center;
    background-color: white;
-   border-radius: 35px;
+   border-radius: 100%;
    color:black;
    margin: 12px 0px;
    padding:0px 5px;
  } 
+
+ .songlist{
+  width:70%;
+ }
  .timestamp{
    margin:0 23px;
    
