@@ -40,12 +40,15 @@ let songs=
             // masterplay.add(document.body.appendchild(img));
             // masterplay.appendChild(img);
             wave.style.opacity = 1;
+            // clock.style.opacity=1;
             masterplay.src='playing.png';
 
         }
         else{
             audioelement.pause();
             wave.style.opacity = 0;
+            // clock.style.opacity = 0;
+            makeallplayer();
             masterplay.src="play.png";
         }
     })
@@ -78,13 +81,14 @@ const makeallplayer = ()=>{
 Array.from(document.getElementsByClassName('songitemplay')).forEach((element)=>{
     element.addEventListener('click', (e)=>{
         // console.log(e.target);
-        makeallplayer();
-        songindex = parseInt(e.target.id);
-        audioelement.src = `song/${songindex+1}.mp3` ;
-        mastersongname.innerText = songs[songindex].songname;
+       
         // audioelement.currentTime = 0;
    
-        if(audioelement.paused || audioelement.currentTime<=0){
+        if(audioelement.paused || audioelement.currentTime<=0 ){
+            makeallplayer();
+            songindex = parseInt(e.target.id);
+            audioelement.src = `song/${songindex + 1}.mp3` ;
+            mastersongname.innerText = songs[songindex].songname;
             audioelement.play();
             
             e.target.src='playing.png';
@@ -131,6 +135,8 @@ document.getElementById('next').addEventListener('click', () =>{
     mastersongname.innerText = songs[songindex].songname;
     audioelement.currentTime=0;
     audioelement.play();
+    wave.style.opacity=1;
+    
     masterplay.src="playing.png"
 })
 document.getElementById('previous').addEventListener('click', () =>{
@@ -144,6 +150,7 @@ document.getElementById('previous').addEventListener('click', () =>{
     mastersongname.innerText = songs[songindex].songname;
     audioelement.currentTime=0;
     audioelement.play();
+    wave.style.opacity=1;
     masterplay.src="playing.png"
 })
 

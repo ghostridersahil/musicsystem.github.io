@@ -54,6 +54,13 @@ nav{
   
  } */
 
+ .clock{
+  height:30px;
+  padding-right:15px;
+  opacity: 0;
+   transition: opacity 0.4s ease-in;
+ }
+
  .container{
     min-height: 70vh;
     background-color: black;
