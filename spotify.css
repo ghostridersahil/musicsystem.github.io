@@ -74,6 +74,7 @@ nav{
     background-image: url("music.gif");
     background-size: 200px;
     flex-direction: column;
+    flex-wrap:wrap;
  }
 
  

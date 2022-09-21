@@ -40,14 +40,14 @@ let songs=
             // masterplay.add(document.body.appendchild(img));
             // masterplay.appendChild(img);
             wave.style.opacity = 1;
-            // clock.style.opacity=1;
+            clock.style.opacity=1;
             masterplay.src='playing.png';
 
         }
         else{
             audioelement.pause();
             wave.style.opacity = 0;
-            // clock.style.opacity = 0;
+            clock.style.opacity = 0;
             makeallplayer();
             masterplay.src="play.png";
         }
@@ -131,7 +131,7 @@ document.getElementById('next').addEventListener('click', () =>{
     else{
         songindex+=1;
     }
-    audioelement.src = `song/${songindex}.mp3`;
+    audioelement.src = `song/${songindex +1}.mp3`;
     mastersongname.innerText = songs[songindex].songname;
     audioelement.currentTime=0;
     audioelement.play();
@@ -146,7 +146,7 @@ document.getElementById('previous').addEventListener('click', () =>{
     else{
         songindex-=1;
     }
-    audioelement.src = `song/${songindex}.mp3`;
+    audioelement.src = `song/${songindex+1}.mp3`;
     mastersongname.innerText = songs[songindex].songname;
     audioelement.currentTime=0;
     audioelement.play();
